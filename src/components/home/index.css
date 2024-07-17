@@ -1,0 +1,8 @@
+.list-cont{
+    width: 50%;
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
