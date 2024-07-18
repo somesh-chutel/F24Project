@@ -1,0 +1,35 @@
+.login-cont{
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.my-form{
+
+    background-color: rgb(37, 35, 35);
+    width: 100%;
+    padding: 30px;
+    color: white;
+}
+
+@media (min-width:768px) {
+
+    .my-form{
+        width: 50%;
+    }
+    
+}
+
+
+@media (min-width:1024px) {
+
+    .my-form{
+        width: 30%;
+    }
+    
+}
