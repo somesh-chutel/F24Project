@@ -1,0 +1,19 @@
+.jobs-cont{
+    width: 100%;
+    background-color: black;
+    padding: 25px;
+    display: flex;
+}
+.filter-section{
+    width: 35%;
+    border: 1px solid white;
+
+}
+.display-all-jobs-section{
+    width: 65%;
+    border: 1px solid red;
+}
+.jobs-list-cont{
+    padding: 20px;
+    list-style: none;
+}

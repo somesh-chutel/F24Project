@@ -1,0 +1,24 @@
+.jobs-card{
+    width: 85%;
+    padding: 20px;
+    background-color: rgb(53, 50, 50);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.logo-title-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-logo{
+    width: 70px;
+}
+.rating-cont{
+    margin-left: 20px;  
+}
+.rating-icon{
+    color: rgb(172, 172, 5);
+    margin-right: 10px;
+}
