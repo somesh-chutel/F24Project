@@ -1,24 +1,30 @@
 .jobs-card{
-    width: 85%;
-    padding: 20px;
-    background-color: rgb(53, 50, 50);
+    list-style: none;
+    background-color: rgb(92, 85, 85);
+    padding: 15px;
     margin-bottom: 10px;
-    border-radius: 15px;
     color: white;
 }
-.logo-title-cont{
+.web-logo-rating-cont{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+    margin-bottom: 15px;
 
-.card-logo{
-    width: 70px;
 }
 .rating-cont{
-    margin-left: 20px;  
+    margin-left: 15px;
+}
+.jobs-web-logo{
+    width: 70px;
 }
 .rating-icon{
-    color: rgb(172, 172, 5);
+    color: gold;
     margin-right: 10px;
+}
+.location-ppa-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-link{
+    text-decoration: none;
 }
