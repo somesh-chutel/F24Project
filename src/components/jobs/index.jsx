@@ -20,6 +20,8 @@ const Jobs = ()=> {
 
         const getJobsData = async()=>{
 
+            console.log(allValues.empType);
+
             const api = `https://apis.ccbp.in/jobs?employment_type=${allValues.empType}&minimum_package=${allValues.minPakage}&search=${allValues.userSearchIn}`;
 
             const option = {
@@ -43,7 +45,7 @@ const Jobs = ()=> {
 
         getJobsData();
 
-    },[allValues.userSearchIn])
+    },[allValues.userSearchIn,allValues.empType])
 
 
     const onChangeUserIn = (e)=>{
@@ -52,6 +54,20 @@ const Jobs = ()=> {
         }
         
     }
+
+    const onChangeEmpType = (value,isChecked)=>{ //check-->fulltime(update),uncheck--->fulltime(remove)
+
+        if(isChecked === true){
+            setValues({...allValues, empType : [...allValues.empType,value]});
+        }
+        else{
+            setValues({...allValues,empType : allValues.empType.filter(each=> each !== value)});
+        }
+
+        
+    }
+
+    const onChangeSallryRange = ()=>{}
 
 
     return(
@@ -62,7 +78,7 @@ const Jobs = ()=> {
                 <div className='jobs-cont'>
 
                             <div className='filter-section'>
-                                <FilterSection/>
+                                <FilterSection emptypeChange = {onChangeEmpType}/>
                             </div>
 
                             <div className='display-all-jobs-section'>
